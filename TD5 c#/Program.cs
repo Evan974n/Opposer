@@ -1,16 +1,10 @@
 ﻿
 using System;
-int Moy (int a, int b)
+int Oppose(int x)
 {
-    return (a+b)/2;
+    return -x;
 }
 
-
-
-
-Console.WriteLine("donnez a :");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("donnez b :");
-int b = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Resultat");
-Console.WriteLine(Moy(a, b));
+int x = -7; 
+int oppose = Oppose(x);
+Console.WriteLine($"oppose de {x} est : {oppose}");
