@@ -1,12 +1,10 @@
 ﻿
 using System;
-bool Somme(int i, int j)
+int Oppose(int x)
 {
-    return i >= j ? true : false;
+    return -x;
 }
 
-int vale = 6; // Hardcoded value 6
-int vale2 = 3; // Hardcoded value 3
-
-Console.WriteLine("Resultat");
-Console.WriteLine(Somme(vale, vale2));
+int x = -7; 
+int oppose = Oppose(x);
+Console.WriteLine($"oppose de {x} est : {oppose}");
