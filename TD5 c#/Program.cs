@@ -1,11 +1,12 @@
-﻿int Somme(int i, int j)
+﻿
+using System;
+bool Somme(int i, int j)
 {
-    return i + j;
+    return i >= j ? true : false;
 }
 
-Console.WriteLine("Saisir un entier");
-int vale = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Saisir un 2eme entier");
-int vale2 = Convert.ToInt32(Console.ReadLine());
+int vale = 6; // Hardcoded value 6
+int vale2 = 3; // Hardcoded value 3
+
 Console.WriteLine("Resultat");
 Console.WriteLine(Somme(vale, vale2));
